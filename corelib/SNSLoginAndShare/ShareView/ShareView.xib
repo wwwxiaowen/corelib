@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShareView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dno-4C-wv9">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Feg-GH-ePj" appends="YES" id="RFe-Be-ajp"/>
+                    </connections>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QG4-xY-9N5">
+                    <rect key="frame" x="0.0" y="280" width="320" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbF-8n-hxx">
+                            <rect key="frame" x="130" y="11" width="60" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p0f-E5-oM6" userLabel="line">
+                            <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ccf-av-8ru"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ip-NL-aPD">
+                            <rect key="frame" x="16" y="53" width="60" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="ShareView.bundle/iconWeixin.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selectWeixin:" destination="iN0-l3-epB" eventType="touchUpInside" id="4KS-Ny-M9q"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="微信" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8OQ-AV-EcV">
+                            <rect key="frame" x="16" y="117" width="60" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTE-sh-g5J">
+                            <rect key="frame" x="90" y="53" width="60" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="ShareView.bundle/iconQQ.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selectQQ:" destination="iN0-l3-epB" eventType="touchUpInside" id="s7s-gY-A8J"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QQ好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIA-b1-Kve">
+                            <rect key="frame" x="87" y="117" width="66" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yw-eD-Lxt">
+                            <rect key="frame" x="166" y="53" width="60" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="ShareView.bundle/iconWeixinFriendCircle.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selectWeixinFriend:" destination="iN0-l3-epB" eventType="touchUpInside" id="WTt-e2-Rcv"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="微信圈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVb-f0-WCN">
+                            <rect key="frame" x="163" y="117" width="66" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaF-gG-zw6">
+                            <rect key="frame" x="241" y="53" width="60" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="ShareView.bundle/iconSina.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selectSina:" destination="iN0-l3-epB" eventType="touchUpInside" id="zIS-i6-GTA"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="微博" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hL1-SJ-iSU">
+                            <rect key="frame" x="238" y="117" width="66" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSM-Ry-zx3">
+                            <rect key="frame" x="16" y="149" width="288" height="36"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="Lz5-Bt-3Jk"/>
+                            </constraints>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelShare:" destination="iN0-l3-epB" eventType="touchUpInside" id="Vdv-BW-YaC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="XbF-8n-hxx" secondAttribute="trailing" constant="130" id="5rA-aN-Gaz"/>
+                        <constraint firstItem="p0f-E5-oM6" firstAttribute="leading" secondItem="QG4-xY-9N5" secondAttribute="leading" id="GQ0-rm-RfJ"/>
+                        <constraint firstItem="p0f-E5-oM6" firstAttribute="top" secondItem="XbF-8n-hxx" secondAttribute="bottom" constant="10" id="H6v-Vm-9wv"/>
+                        <constraint firstAttribute="height" constant="200" id="PLC-QJ-Sdg"/>
+                        <constraint firstItem="XbF-8n-hxx" firstAttribute="top" secondItem="QG4-xY-9N5" secondAttribute="top" constant="11" id="Ywe-fe-QNa"/>
+                        <constraint firstItem="XbF-8n-hxx" firstAttribute="leading" secondItem="QG4-xY-9N5" secondAttribute="leading" constant="130" id="gvv-t9-eBK"/>
+                        <constraint firstAttribute="trailing" secondItem="p0f-E5-oM6" secondAttribute="trailing" id="lJ4-GL-XEI"/>
+                        <constraint firstAttribute="trailing" secondItem="JSM-Ry-zx3" secondAttribute="trailing" constant="16" id="r8o-Mo-6pW"/>
+                        <constraint firstItem="JSM-Ry-zx3" firstAttribute="leading" secondItem="QG4-xY-9N5" secondAttribute="leading" constant="16" id="tXf-hQ-s9i"/>
+                        <constraint firstItem="JSM-Ry-zx3" firstAttribute="top" secondItem="p0f-E5-oM6" secondAttribute="bottom" constant="106" id="uDg-gB-KgL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QG4-xY-9N5" secondAttribute="bottom" id="9w2-4t-E5j"/>
+                <constraint firstAttribute="bottom" secondItem="dno-4C-wv9" secondAttribute="bottom" id="CZU-u0-HKD"/>
+                <constraint firstAttribute="trailing" secondItem="dno-4C-wv9" secondAttribute="trailing" id="VPp-Ld-Yj6"/>
+                <constraint firstItem="QG4-xY-9N5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oNe-q6-BAN"/>
+                <constraint firstItem="dno-4C-wv9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qsh-wq-w7b"/>
+                <constraint firstAttribute="trailing" secondItem="QG4-xY-9N5" secondAttribute="trailing" id="vwN-eu-q56"/>
+                <constraint firstItem="dno-4C-wv9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="y7K-w4-SPg"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImg" destination="dno-4C-wv9" id="pdn-OR-bDw"/>
+                <outlet property="line" destination="p0f-E5-oM6" id="rBr-4v-qbG"/>
+                <outlet property="shareView" destination="QG4-xY-9N5" id="lrQ-Kh-fSs"/>
+            </connections>
+            <point key="canvasLocation" x="238" y="67"/>
+        </view>
+        <tapGestureRecognizer id="Feg-GH-ePj">
+            <connections>
+                <action selector="handTap:" destination="iN0-l3-epB" id="7PG-af-Mwf"/>
+                <outlet property="delegate" destination="iN0-l3-epB" id="OyT-xi-bYQ"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="ShareView.bundle/iconQQ.png" width="57" height="57"/>
+        <image name="ShareView.bundle/iconSina.png" width="57" height="57"/>
+        <image name="ShareView.bundle/iconWeixin.png" width="57" height="57"/>
+        <image name="ShareView.bundle/iconWeixinFriendCircle.png" width="57" height="57"/>
+    </resources>
+</document>
