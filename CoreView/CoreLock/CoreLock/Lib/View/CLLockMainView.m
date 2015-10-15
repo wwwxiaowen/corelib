@@ -7,7 +7,7 @@
 //
 
 #import "CLLockMainView.h"
-#import "AllConstDefine.h"
+#import "CoreConst.h"
 
 
 @interface CLLockMainView ()

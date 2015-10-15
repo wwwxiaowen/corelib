@@ -35,6 +35,7 @@ iOS常用封装类库
 18.MBProgressHUD </br>
 19.STWebviewController 网页嵌套,右滑效果</br>
 20.SlideTabBarView 滑动标签栏</br>
+21.PageView 广告图片轮播器 </br>
 
 三、常用工具相关(corelib)
 1.AESCrypt AESCrypt加密</br>
@@ -57,4 +58,8 @@ iOS常用封装类库
 18.SSKEYCHAIN </br>
 19.RegexKitLite 正则库</br>
 20.TYAttributedLabel 富文本</br>
+21.ZipArchive 解压缩</br>
+22.FDTemplateLayoutCell tableviewcell高度缓存(不重复计算)<br>
+
+
 
