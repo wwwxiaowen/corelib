@@ -36,6 +36,8 @@ iOS常用封装类库
 19.STWebviewController 网页嵌套,右滑效果</br>
 20.SlideTabBarView 滑动标签栏</br>
 21.PageView 广告图片轮播器 </br>
+22.HUFlexibleParallaxView  顶部图片放大缩小,类似淘宝宝贝详情页导航栏以及图片切换效果</br>
+
 
 三、常用工具相关(corelib)
 1.AESCrypt AESCrypt加密</br>
